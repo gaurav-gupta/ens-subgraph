@@ -8,9 +8,9 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: ENSRegistry
-    network: ropsten
+    network: goerli
     source:
-      address: "0x3Ab956506611F96885dA58f507CF9D6C788f8f40"
+      address: "0xCb1acEA9AfdA95c7fE3D0ABc11F98e8A0872E88e"
       abi: EnsRegistry
     mapping:
       kind: ethereum/events
@@ -35,7 +35,7 @@ dataSources:
           handler: handleNewTTL
   - kind: ethereum/contract
     name: ENSRegistryOld
-    network: ropsten
+    network: goerli
     source:
       address: "0x314159265dd8dbb310642f98f50c066173c1259b"
       abi: EnsRegistry
@@ -62,7 +62,7 @@ dataSources:
           handler: handleNewTTLOldRegistry
   - kind: ethereum/contract
     name: Resolver
-    network: ropsten
+    network: goerli
     source:
       abi: Resolver
     mapping:
@@ -106,9 +106,9 @@ dataSources:
           handler: handleTextChanged
   - kind: ethereum/contract
     name: BaseRegistrar
-    network: ropsten
+    network: goerli
     source:
-      address: "0x1e3E2A013D5A3E7710B433561504a76E739D2b92"
+      address: "0xbda0D9959D2b6e0962ac772DC91426410b0e174c"
       abi: BaseRegistrar
     mapping:
       kind: ethereum/events
@@ -132,9 +132,9 @@ dataSources:
           handler: handleNameTransferred
   - kind: ethereum/contract
     name: EthRegistrarController
-    network: ropsten
+    network: goerli
     source:
-      address: "0x59F5dc93f140A8499341777Ae3dC2334a000cbD5"
+      address: "0xE1aA7Ce3f1440990a81174856463c5b39E3915f3"
       abi: EthRegistrarController
     mapping:
       kind: ethereum/events
